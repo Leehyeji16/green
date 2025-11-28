@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스마트그린푸드</title>
+
+  <!-- Preload: 중요 리소스 우선 로드 -->
+  <link rel="preload" href="./assets/font/pretendard/Pretendard-Regular.woff" as="font" type="font/woff" crossorigin />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 헤더: 동적 로드 -->
+    <header id="header"></header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+      <div class="container">
+        <div class="flex_sb">
+          <!-- 메인 콘텐츠 01: 스마트 그린푸드 소개 -->
+          <section class="smartGreenFood_content" aria-labelledby="main-intro-title">
+            <!-- 배경 이미지 (장식용) -->
+            <img src="./assets/images/main/main_content_01.png" alt="" class="cover_img" role="presentation" />
+            <img src="./assets/images/main/main_content_01_mo.png" alt="" class="cover_img_mo" role="presentation" />
+
+            <!-- 소개 텍스트 -->
+            <div class="text_box-01">
+              <p class="label label-01">스마트 그린푸드 소개</p>
+              <h2 id="main-intro-title" class="main_title main_title-01">
+                저탄소 Food로<br />
+                대한민국을 Smart하게
+              </h2>
+              <p class="main_subtitle-01">
+                대한민국 농식품산업은 녹색성장으로 <br class="pc_hidden">스마트하게 나아갑니다.
+              </p>
+            </div>
+
+            <!-- 더보기 버튼 -->
+            <button class="main_btn-01" aria-label="스마트그린푸드 소개 페이지로 이동">
+              스마트그린푸드 소개
+              <span aria-hidden="true">
+                <img src="./assets/images/main/btn_arrow.png" alt="" />
+              </span>
+            </button>
+          </section>
+
+          <!-- 메인 콘텐츠 그룹: 사업 안내 및 공지사항 -->
+          <div class="main_content_group flex_col">
+            <!-- 주요 사업 그리드 (2x2) -->
+            <section class="grid" aria-label="주요 사업 안내">
+              <!-- 그리드 아이템 01: 온실가스 감축사업 -->
+              <a href="javascript:void(0)" class="grid-item grid-item-01">
+                <span class="grid-btn">
+                  <img src="./assets/images/main/btn_arrow.png" alt="" />
+                </span>
+                <span class="label label-02">농업/농촌 자발적 사업</span>
+                <span class="grid-item-title">온실가스 감축사업</span>
+                <span class="grid-item-img grid-item-img-01" aria-hidden="true">
+                  <img src="./assets/images/main/main_img_01.png" alt="" />
+                </span>
+              </a>
+
+              <!-- 그리드 아이템 02: 저탄소농산물 인증제 -->
+              <a href="javascript:void(0)" class="grid-item grid-item-02">
+                <span class="grid-btn">
+                  <img src="./assets/images/main/btn_arrow.png" alt="" />
+                </span>
+                <span class="label label-03">저탄소농산물</span>
+                <span class="grid-item-title">인증제</span>
+                <span class="grid-item-text">
+                  생산과정에서 온실가스 배출을 <br />
+                  감축한 농산물에 '저탄소 인증' 을<br />
+                  표시하는 제도
+                </span>
+                <span class="grid-item-img grid-item-img-02">
+                  <img src="./assets/images/main/main_img_02.png" alt="" />
+                </span>
+              </a>
+
+              <!-- 그리드 아이템 03: 탄소발자국 -->
+              <a href="javascript:void(0)" class="grid-item grid-item-03">
+                <span class="grid-btn">
+                  <img src="./assets/images/main/btn_arrow.png" alt="" />
+                </span>
+                <span class="label label-01">밥상</span>
+                <span class="grid-item-title">탄소발자국</span>
+              </a>
+
+              <!-- 그리드 아이템 04: 지구를 지키는 농업 -->
+              <a href="javascript:void(0)" class="grid-item grid-item-04">
+                <span class="grid-btn">
+                  <img src="./assets/images/main/btn_arrow.png" alt="" />
+                </span>
+                <span class="label label-05">지구를 지키는</span>
+                <span class="grid-item-title">농업</span>
+                <span class="caption">동영상 자료</span>
+                <span class="grid-item-img grid-item-img-03">
+                  <img src="./assets/images/main/main_img_03.png" alt="" />
+                </span>
+              </a>
+            </section>
+
+            <!-- 저탄소 인증 농가 조회 버튼 -->
+            <button class="lookup_btn flex_sb" aria-label="저탄소 인증 농가 조회하기">
+              <span>저탄소 인증 농가 조회하기</span>
+              <span aria-hidden="true" class="ic_search"></span>
+            </button>
+
+            <!-- 공지사항 및 자료실 탭 -->
+            <section class="tab_box" aria-labelledby="tab-section-title">
+              <h2 id="tab-section-title" class="sr-only">
+                공지사항 및 자료실
+              </h2>
+
+              <!-- 탭 헤더 -->
+              <div class="tab_header">
+                <div class="tab_nav" role="tablist" aria-label="공지사항 및 자료실 탭">
+                  <button class="tab_btn active" data-tab="notice" role="tab" aria-selected="true"
+                    aria-controls="panel-notice" id="tab-notice">
+                    공지사항
+                  </button>
+                  <button class="tab_btn" data-tab="archive" role="tab" aria-selected="false"
+                    aria-controls="panel-archive" id="tab-archive">
+                    자료실
+                  </button>
+                </div>
+                <a href="#" class="view_all" aria-label="전체보기로 이동">
+                  전체보기
+                  <img src="./assets/images/main/arrow_right.png" alt="" aria-hidden="true" />
+                </a>
+              </div>
+
+              <!-- 공지사항 탭 콘텐츠 -->
+              <div class="tab_content active" data-tab="notice" role="tabpanel" id="panel-notice"
+                aria-labelledby="tab-notice">
+                <ul class="notice_list">
+                  <li>
+                    <div>
+                      <span class="number">1</span>
+                      <a href="#" class="title">2025 상반기 저탄소 농산물 인증사업 신규·갱신</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="number">2</span>
+                      <a href="#" class="title">2025 상반기 저탄소 농산물 인증사업 인증서 발급</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="number">3</span>
+                      <a href="#" class="title">2025 상반기 저탄소 농산물 인증사업 결과발표</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="number">4</span>
+                      <a href="#" class="title">2025 상반기 저탄소 농산물 인증사업 농가 선정결과</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="number">5</span>
+                      <a href="#" class="title">2025 상반기 저탄소 농산물 인증사업 신규·갱신</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                </ul>
+
+                <!-- 모바일 전체보기 -->
+                <a href="javascript:void(0)" title="전체보기" class="btn_all_mo">전체보기</a>
+              </div>
+
+              <!-- 자료실 탭 콘텐츠 -->
+              <div class="tab_content" data-tab="archive" role="tabpanel" id="panel-archive"
+                aria-labelledby="tab-archive" hidden>
+                <ul class="notice_list">
+                  <li>
+                    <div>
+                      <span class="number">1</span>
+                      <a href="#" class="title">자료실 자료 1</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="number">2</span>
+                      <a href="#" class="title">자료실 자료 2</a>
+                    </div>
+
+                    <span class="date">2025-01-01</span>
+                  </li>
+                </ul>
+
+                <!-- 모바일 전체보기 -->
+                <a href="javascript:void(0)" title="전체보기" class="btn_all_mo">전체보기</a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- 관련 기관 링크 -->
+        <nav class="mark_link flex" aria-label="관련 기관">
+          <div class="mark_link_inner">
+            <div>
+              <a href="#" aria-label="농촌진흥청 웹사이트로 이동">
+                <img src="./assets/images/main/main_link_01.jpg" alt="농촌진흥청" />
+              </a>
+            </div>
+            <div>
+              <a href="#" aria-label="농림축산식품부 웹사이트로 이동">
+                <img src="./assets/images/main/main_link_02.jpg" alt="농림축산식품부" />
+              </a>
+            </div>
+            <div>
+              <a href="#" aria-label="한국마사회 웹사이트로 이동">
+                <img src="./assets/images/main/main_link_03.jpg" alt="한국마사회" />
+              </a>
+            </div>
+            <div>
+              <a href="#" aria-label="한국농업기술진흥원 웹사이트로 이동">
+                <img src="./assets/images/main/main_link_04.jpg" alt="한국농업기술진흥원" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <!-- 푸터: 동적 로드 -->
+    <footer id="footer"></footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/tabs.js"></script>
+  <script src="./assets/js/fontsize.js"></script>
+  <script>
+    $(document).ready(function () {
+      // 헤더 로드 및 드롭다운 초기화
+      $("#header").load("./include/header.html", function () {
+        initDropdown();
+        initFontSizeController();
+      });
+
+      // 푸터 로드
+      $("#footer").load("./include/footer.html");
+
+      // 탭 초기화
+      initTabs();
+
+      // 페이지 로딩 완료 후 페이드인 효과
+      setTimeout(function () {
+        $("body").addClass("loaded");
+      }, 100);
+    });
+  </script>
+  <script>
+    const mobileLogoLoop = () => {
+      const markLinkInner = document.querySelector('.mark_link_inner');
+      if (!markLinkInner) return;
+
+      let isCloned = false;
+
+      const handleClone = () => {
+        const width = window.innerWidth;
+
+        if (width <= 768) {
+          if (!isCloned) {
+            const items = Array.from(markLinkInner.children);
+
+            items.forEach(item => {
+              const clone = item.cloneNode(true);
+              clone.classList.add('clone-item');
+              markLinkInner.appendChild(clone);
+            });
+
+            isCloned = true;
+          }
+        } else {
+          if (isCloned) {
+            const clones = markLinkInner.querySelectorAll('.clone-item');
+            clones.forEach(clone => clone.remove());
+            isCloned = false;
+          }
+        }
+      };
+
+      handleClone();
+      window.addEventListener("resize", handleClone);
+    };
+    mobileLogoLoop();
+
+
+  </script>
+  <script src="./assets/js/fontsize.js"></script>
+</body>
+
+</html>
