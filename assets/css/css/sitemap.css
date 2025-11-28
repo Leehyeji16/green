@@ -84,6 +84,7 @@
     height: auto;
     display: block;
     object-fit: contain
+    
 }
 
 .common_banner_wrap .txt_box {
@@ -428,7 +429,9 @@
     /* 카테고리 탭 영역 - 좌우 여백 20px */
     .category_tab_wrap {
         padding: 0 2rem;
-        margin-bottom: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5px; 
+
     }
 
     .category_tab {
@@ -447,10 +450,18 @@
         padding: 1.2rem 1.8rem;
         margin: 0;
     }
+     .category_tab_wrap::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #EFEFEF;
+        margin: 4rem 0;
+    }
 
     /* 사이트맵 영역 */
     .sitemap_area {
-        padding: 4rem 0 8rem;
+         padding: 0 !important;
     }
 
     .sitemap_area .inner {
